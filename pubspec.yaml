@@ -1,4 +1,4 @@
-name: safrah_testing
+name: riyadh_metro
 description: A clean Flutter test project.
 publish_to: 'none'
 version: 1.0.0+1
@@ -9,6 +9,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  http: ^0.13.5
+  mime: ^1.0.4
 
 dev_dependencies:
   flutter_test:
