@@ -1,11 +1,12 @@
 import 'package:flutter_test/flutter_test.dart';
+import 'package:flutter/material.dart';
 import 'package:riyadh_metro/main.dart';
 
 void main() {
-  testWidgets('MyApp renders', (tester) async {
+  testWidgets('Riyadh Metro title is shown', (WidgetTester tester) async {
     await tester.pumpWidget(const MyApp());
-    expect(find.byType(MyApp), findsOneWidget);
-  test('basic addition test', () {
-    expect(2 + 2, equals(4));
+
+    expect(find.text('Riyadh Metro'), findsOneWidget);
+    expect(find.text('Hello Metro'), findsOneWidget);
   });
 }
