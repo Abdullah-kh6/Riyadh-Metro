@@ -10,19 +10,26 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import 'flutter_flow/flutter_flow_util.dart';
 import 'flutter_flow/internationalization.dart';
 
-void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  GoRouter.optionURLReflectsImperativeAPIs = true;
-  usePathUrlStrategy();
+import 'package:flutter/material.dart';
 
-  await initFirebase();
-
-  await FlutterFlowTheme.initialize();
-
-  await FFLocalizations.initialize();
-
+void main() {
   runApp(const MyApp());
 }
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(title: const Text('Riyadh Metro')),
+        body: const Center(child: Text('Hello Metro')),
+      ),
+    );
+  }
+}
+
 
 class MyApp extends StatefulWidget {
   const MyApp({super.key});
